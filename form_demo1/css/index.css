@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #081620;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-item {
+    margin: 15px;
+}
+
+/* 文本框统一样式 */
+.txt {
+    outline: none;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.txt:focus{
+    border-color: #081620;
+}
+
+select.txt{
+    height: 100px;
+    padding: 10px;
+}
+
+textarea.txt{
+    height: 100px;
+    padding: 10px;
+    resize: none;
+}
+
+/* 按钮统一样式 */
+button{
+    height: 40px;
+    width: 150px;
+    border: 0;
+    outline: none;
+    background-color: #5f8be8;
+    color: #fff;
+    size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:#5e80c9 ;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear:both;
+}
+
+.captcha .txt{
+    width: 150px;
+}
+
+.title{
+    margin-right: 10px;
+}
+
+.policy{
+    font-size: 14px;
+}
+
+.policy span{
+    vertical-align: 2px;
+}
+/* 行块元素和行元素不对齐，可以使用这个解决 */
+
+label span{
+    color: #ccc;
+}
+
+label input:checked ~ span{
+    color: #333;
+}
