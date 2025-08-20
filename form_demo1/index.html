@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>注册页面</title>
 </head>
+
 <body>
-     <form class="container">
+    <form class="container">
         <h1>注册页面</h1>
         <div class="form-item">
             <input type="text" placeholder="请输入手机号" maxlength="11">
@@ -14,8 +16,58 @@
 
         <div class="form-item">
             <input type="text" placeholder="请填写验证码">
-            <button ></button>
+            <button>发送验证码</button>
         </div>
-     </form>
+
+        <div class="form-item">
+            <input type="password" placeholder="请输入密码">
+        </div>
+        <div class="form-item">
+            <input type="password" placeholder="请确认密码">
+        </div>
+
+        <div class="form-item">
+            <select multiple="multiple">
+                <option>爱好1</option>
+                <option selected>爱好2</option>
+                <option>爱好3</option>
+                <option>爱好4</option>
+                <option>爱好5</option>
+                <option>爱好6</option>
+            </select>
+        </div>
+
+        <div class="form-item">
+            <div class="title">性别</div>
+            <div>
+                <label>
+                    <input type="radio" name="sex" checked>
+                    <span>男</label>
+                </label>
+                <label>
+                    <input type="radio" name="sex">
+                    <span>女</span>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="form-item">
+            <textarea placeholder="请输入个人简介"></textarea>
+        </div>
+
+        <div class="form-item">
+            <label>
+                <input type="radio">
+                <span>同意用户注册协议</span>
+            </label>
+        </div>
+
+        <div class="form-item">
+            <button>立即注册</button>
+            <button type="reset">表单重置</button>
+        </div>
+    </form>
 </body>
+
 </html>
