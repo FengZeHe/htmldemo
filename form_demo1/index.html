@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="./css/index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>注册页面</title>
@@ -11,23 +12,23 @@
     <form class="container">
         <h1>注册页面</h1>
         <div class="form-item">
-            <input type="text" placeholder="请输入手机号" maxlength="11">
+            <input class="txt" type="text" placeholder="请输入手机号" maxlength="11">
+        </div>
+
+        <div class="form-item clearfix captcha">
+            <input class="txt left" type="text" placeholder="请填写验证码">
+            <button class="right">发送验证码</button>
         </div>
 
         <div class="form-item">
-            <input type="text" placeholder="请填写验证码">
-            <button>发送验证码</button>
+            <input class="txt" type="password" placeholder="请输入密码">
+        </div>
+        <div class="form-item">
+            <input class="txt" type="password" placeholder="请确认密码">
         </div>
 
         <div class="form-item">
-            <input type="password" placeholder="请输入密码">
-        </div>
-        <div class="form-item">
-            <input type="password" placeholder="请确认密码">
-        </div>
-
-        <div class="form-item">
-            <select multiple="multiple">
+            <select multiple="multiple" class="txt">
                 <option>爱好1</option>
                 <option selected>爱好2</option>
                 <option>爱好3</option>
@@ -37,9 +38,9 @@
             </select>
         </div>
 
-        <div class="form-item">
-            <div class="title">性别</div>
-            <div>
+        <div class="form-item clearfix ">
+            <div class="title left">性别</div>
+            <div class="left">
                 <label>
                     <input type="radio" name="sex" checked>
                     <span>男</label>
@@ -48,15 +49,15 @@
                     <input type="radio" name="sex">
                     <span>女</span>
                 </label>
-
+    
             </div>
         </div>
 
         <div class="form-item">
-            <textarea placeholder="请输入个人简介"></textarea>
+            <textarea class="txt" placeholder="请输入个人简介"></textarea>
         </div>
 
-        <div class="form-item">
+        <div class="form-item policy">
             <label>
                 <input type="radio">
                 <span>同意用户注册协议</span>
