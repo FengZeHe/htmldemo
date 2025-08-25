@@ -59,12 +59,15 @@
     text-align: center;
     line-height: 100px;
     display: none;
+    z-index: 50;
 }
 
 .topnav-car:hover .topnav-detail{
     display: block;
 }
 
-.topnav-car:hover .topnav-detail{
-    background: #fff;
+.topnav-car:hover .topnav-link{
+    background:#fff;
+    color:#ff6700;
 }
+
