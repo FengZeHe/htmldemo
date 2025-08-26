@@ -59,7 +59,10 @@
     margin-bottom: 14px;
     width: 234px;
     height: 300px;
+    text-align: center;
 }
+
+
 .sc-item-list{
     width: 978px;
 }
