@@ -1,0 +1,67 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.cat {
+    height: 100vh;
+    background: #409eff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.cat-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+
+.cat-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+    transition: 0.5s
+}
+
+.cat-pic:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.arrows {
+    height: 100vh;
+    background: #e6a23c;
+}
+
+.btnGroup{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    top: 50%;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #111;
+}
+
+.btn{
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #fff;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="btnGroup">
+        <span class="btn" id="toCat">第一页</span>
+        <span class="btn" id="toArrow">第二页</span>
+    </div>
+    <div id="cat" class="cat">
+        <img class="cat-icon" src="./cat-icon.png" alt="">
+        <p>小猫咪</p>
+        <img class="cat-pic" src="./cat.jpg" alt="">
+
+    </div>
+    <div id="arrows" class="arrows"></div>
+
+</body>
+
+</html>
+
+<script>
+    const toArrows = document.getElementById('toArrow');
+    const cat = document.getElementById('cat');
+    const arrows = document.getElementById('arrows');
+
+    toArrows.addEventListener('click', () => {
+        arrows.scrollIntoView({ behavior: 'smooth' });
+    })
+
+</script>
