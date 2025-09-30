@@ -19,7 +19,9 @@
         <img class="cat-pic" src="./cat.jpg" alt="">
 
     </div>
-    <div id="arrows" class="arrows"></div>
+    <div id="arrows" class="arrows">
+        <div class="bubble">这是一个箭头</div>
+    </div>
 
 </body>
 
@@ -27,11 +29,16 @@
 
 <script>
     const toArrows = document.getElementById('toArrow');
+    const toCat = document.getElementById('toCat');
     const cat = document.getElementById('cat');
     const arrows = document.getElementById('arrows');
 
     toArrows.addEventListener('click', () => {
         arrows.scrollIntoView({ behavior: 'smooth' });
+    })
+
+    toCat.addEventListener('click', () => {
+        cat.scrollIntoView({ behavior: 'smooth' })
     })
 
 </script>
